@@ -1,0 +1,2 @@
+# duckdb_analytics_kokchun_giang_mlops25
+Learning duckdb
