@@ -30,5 +30,10 @@ SELECT
     job_title,
     salary_in_usd,
     company_size
-FROM 
+FROM
+    data_jobs;
+
+SELECT
+    * EXCLUDE (work_year, job_title)
+FROM
     data_jobs;
