@@ -1,3 +1,5 @@
+-- descriptive statistics with aggregation functions
+-- AS to make alias for the column
 SELECT 
     MIN(salary_in_usd) AS min_salary,
     MEDIAN(salary_in_usd) AS median_salary,
