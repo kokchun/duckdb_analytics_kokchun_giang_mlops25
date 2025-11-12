@@ -33,7 +33,20 @@ SELECT
 FROM
     data_jobs;
 
+-- gives every column except for those specified 
 SELECT
     * EXCLUDE (work_year, job_title)
+FROM
+    data_jobs;
+
+-- unique -> DISTINCT
+SELECT DISTINCT
+    employment_type
+FROM
+    data_jobs;
+
+-- unique -> DISTINCT
+SELECT DISTINCT
+    experience_level
 FROM
     data_jobs;
