@@ -6,4 +6,16 @@ Based on the EDA, I want to do the following
 - value -> number_of_searches
 - week_id -> week column and year column
 
- */
+Very good to SELECT before doing the transformation
+
+*/
+
+SELECT
+   id AS food,
+   value AS number_of_searches,
+   week_id[1:4] AS year,
+   week_id[-2:] AS week
+FROM 
+    food;
+
+
