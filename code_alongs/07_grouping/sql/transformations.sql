@@ -28,3 +28,4 @@ CREATE TABLE IF NOT EXISTS cleaned_food AS (
     FROM 
         food
 );
+
