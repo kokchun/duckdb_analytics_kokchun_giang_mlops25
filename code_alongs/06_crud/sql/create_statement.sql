@@ -25,4 +25,12 @@ CREATE TABLE
         id INTEGER DEFAULT nextval ('id_sql_sequence'),
         word STRING,
         description STRING
-    )
+    );
+
+
+CREATE TABLE
+    IF NOT EXISTS database_schema.duckdb_table (
+        id INTEGER DEFAULT nextval ('id_duckdb_sequence'),
+        word STRING,
+        description STRING
+    );
