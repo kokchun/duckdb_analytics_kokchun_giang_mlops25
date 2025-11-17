@@ -5,11 +5,28 @@ EDA - Exploratory Data Analysis
 - find some insights 
 
  */
+FROM
+    food;
 
- FROM food;
+SELECT DISTINCT
+    id
+FROM
+    food;
 
- SELECT DISTINCT id FROM food;
+SELECT DISTINCT
+    id
+FROM
+    food
+ORDER BY
+    id;
 
- SELECT DISTINCT id FROM food ORDER BY id;
+-- filter out certain weeks
+SELECT
+    *
+FROM
+    food
+WHERE 
+    week_id BETWEEN '2011-01' AND '2011-04';
 
- 
+
+DESC TABLE food;
