@@ -26,4 +26,4 @@ SELECT
   'hej på dig' AS s1,
   REVERSE(s1), 
   'ni talar bra latin' AS p1,
-  REVERSE(p1)
+  REVERSE(p1);
