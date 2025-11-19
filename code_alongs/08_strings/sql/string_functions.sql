@@ -17,6 +17,7 @@ FROM
 -- > 1 space between some words
 SELECT
     description,
-    REPLACE (TRIM(description), '  ', ' ') AS cleaned_description
+    REPLACE (TRIM(description), '  ', ' ') AS cleaned_description,
+    REGEXP_REPLACE(TRIM(description), ' +', ' ','g') AS regexp_clean
 FROM
     staging.glossary;
