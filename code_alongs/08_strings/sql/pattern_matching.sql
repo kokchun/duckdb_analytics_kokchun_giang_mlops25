@@ -22,4 +22,11 @@ FROM
 WHERE
     sql_word ILIKE '%te';
 
-    
+-- _ matches all characters
+SELECT 
+    *
+FROM 
+    refined.sql_glossary
+WHERE
+    sql_word LIKE 'UP_A_E';
+
