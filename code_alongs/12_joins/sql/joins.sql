@@ -34,5 +34,18 @@ SELECT
     pc.water_schedule,
     pc.sunlight
 FROM 
-    plant_care pc 
-    LEFT JOIN plants p ON p.plant_id = pc.plant_id;
+    plant_care pc -- vänster
+    LEFT JOIN plants p  -- höger
+    ON p.plant_id = pc.plant_id;
+
+-- inner join
+SELECT
+    p.plant_id,
+    p.plant_name,
+    p.type,
+    pc.water_schedule,
+    pc.sunlight
+FROM 
+    plant_care pc -- vänster
+    INNER JOIN plants p  -- höger
+    ON p.plant_id = pc.plant_id;
