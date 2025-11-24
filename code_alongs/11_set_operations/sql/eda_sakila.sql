@@ -25,7 +25,7 @@ SELECT
     c.first_name || ' ' || c.last_name AS name
 FROM customer c; -- alias 
 
-
+-- all customers firstname starting with B
 SELECT 
     'customer' AS type,
     c.first_name || ' ' || c.last_name AS name
