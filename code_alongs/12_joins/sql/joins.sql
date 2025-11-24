@@ -25,3 +25,14 @@ SELECT
 FROM 
     plants p 
     RIGHT JOIN plant_care pc ON p.plant_id = pc.plant_id;
+
+-- Achieve RIGHT JOIN with LEFT JOIN
+SELECT
+    p.plant_id,
+    p.plant_name,
+    p.type,
+    pc.water_schedule,
+    pc.sunlight
+FROM 
+    plant_care pc 
+    LEFT JOIN plants p ON p.plant_id = pc.plant_id;
