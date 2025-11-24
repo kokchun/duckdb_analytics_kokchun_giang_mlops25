@@ -14,3 +14,20 @@ FROM film_actor;
 -- actor_id 1 -> Penelope Guiness
 -- plays in movies: academy dinosaur, anaconda confessions, ...
 FROM actor;
+
+-- bridge table between film and category
+-- it holds film_id and category_id
+FROM film_category;
+FROM category;
+
+SELECT 
+    'customer' AS type,
+    c.first_name || ' ' || c.last_name AS name
+FROM customer c; -- alias 
+
+
+SELECT 
+    'customer' AS type,
+    c.first_name || ' ' || c.last_name AS name
+FROM customer c
+WHERE c.first_name ILIKE 'b%';
