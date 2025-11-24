@@ -31,3 +31,5 @@ SELECT
     c.first_name || ' ' || c.last_name AS name
 FROM customer c
 WHERE c.first_name ILIKE 'b%';
+
+-- continue with your own EDA, there is a lot of things to explore
