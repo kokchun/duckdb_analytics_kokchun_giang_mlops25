@@ -39,6 +39,8 @@ FROM
     ON p.plant_id = pc.plant_id;
 
 -- inner join
+-- I want to know which plants that have plant care 
+-- not interested in those without plant care
 SELECT
     p.plant_id,
     p.plant_name,
@@ -49,3 +51,18 @@ FROM
     plant_care pc -- vänster
     INNER JOIN plants p  -- höger
     ON p.plant_id = pc.plant_id;
+
+-- full join
+SELECT
+    p.plant_id,
+    p.plant_name,
+    p.type,
+    pc.water_schedule,
+    pc.sunlight
+FROM 
+    plant_care pc -- vänster
+    FULL JOIN plants p  -- höger
+    ON p.plant_id = pc.plant_id;
+
+
+
