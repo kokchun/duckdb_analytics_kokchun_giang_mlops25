@@ -52,17 +52,20 @@ FROM
     INNER JOIN plants p  -- höger
     ON p.plant_id = pc.plant_id;
 
+FROM plants;
+FROM plant_care;
+
 -- full join
 SELECT
-    p.plant_id,
     p.plant_name,
+    pc.plant_id,
     p.type,
     pc.water_schedule,
     pc.sunlight
 FROM 
     plant_care pc -- vänster
     FULL JOIN plants p  -- höger
-    ON p.plant_id = pc.plant_id;
+    ON p.plant_id = pc.plant_id; -- join column
 
 
 
